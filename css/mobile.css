@@ -1,0 +1,152 @@
+
+@media (min-width:501px) and (max-width: 815px) { 
+
+    #welcome img{
+        width: 100%;
+    }
+
+    #welcome .btn1{
+        /* font-size: 20px; */
+    }
+
+    #game {
+        /* display: grid;
+        grid-template-rows: 18vh 82vh;
+        grid-template-columns: auto; */
+        flex-wrap: wrap;
+    }
+
+    .gamepage{
+        height: 80%;
+        width: 100%;
+    }
+
+    .sidebar{
+        /* grid-row: 1 / 1;
+        grid-column: 1 / 1;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;*/
+        width: 100%;
+        height: 20%;
+        flex-direction: row;
+        align-items:flex-start;
+        padding: 0;
+    } 
+
+    .sidebar .box{
+        width: 40px;
+        height: 20px;
+        position: relative;
+        top:-22px;
+
+    }
+
+    .sidebar .box img{
+        width: 35px;
+        height: 30px;
+    }
+
+    .sidebar .elements{
+        flex-direction:row-reverse;
+        flex-wrap:nowrap;
+        
+        overflow:visible;
+        position: absolute;
+        left: 35%;
+        bottom: 3%;
+
+    }
+
+    .buttonarea {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 10px;
+        padding-left: 270px;
+    }
+
+
+
+    .buttonarea .btn2{
+        width: 120px;
+        margin: 8px auto;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) { 
+    #welcome img{
+        width: 90%;
+    }
+
+    #welcome .btn1{
+        /* font-size: 20px; */
+    }
+
+    #game {
+        /* display: grid;
+        grid-template-rows: 18vh 82vh;
+        grid-template-columns: auto; */
+        flex-wrap: wrap;
+    }
+
+    .gamepage{
+        height: 75%;
+    }
+
+    .sidebar{
+        /* grid-row: 1 / 1;
+        grid-column: 1 / 1;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;*/
+        width: 100%;
+        height: 25%;
+        flex-direction: row;
+        align-items:flex-start;
+        padding: 0;
+    } 
+
+    .sidebar .box{
+        width: 100px;
+        height: 100px;
+        margin: 0;
+
+    }
+
+    .sidebar .elements{
+        flex-direction:row-reverse;
+        flex-wrap:nowrap;
+        
+        overflow:visible;
+        position: absolute;
+        bottom: 3%;
+
+    }
+
+    .sidebar .myelement{
+
+    }
+
+    .buttonarea {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+
+
+    .buttonarea .btn2{
+        width: 120px;
+        margin: 8px auto;
+        margin-left: 10px;
+    }
+
+}
+
+

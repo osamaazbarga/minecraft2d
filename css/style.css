@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:var(--font-maincraft);
+    text-align: center;
+}
+
+#welcome {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(../image/bg-wool-dark.png)repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn1 {
+    background: var(--green-btn);
+    text-transform: uppercase;
+    padding: .8rem 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 5px solid black;
+    color: white;
+    font-family: var(--font-maincraft);
+    letter-spacing: 3px;
+}
+
+.btn1:hover{
+    background: #313131;
+}
+
+.btn2{
+    height: 40px;
+    width: 10vw;
+    outline: 2px solid black;
+    background: url('../image/button_center.png')repeat;
+    font-family: var(--font-maincraft);
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px #4C4C4C;
+    border-bottom: 4px solid #565656;
+    border-right: 2px solid #565656;
+    border-left: 2px solid #AAA;
+    border-top: 2px solid #AAA;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.btn2:hover{
+    
+    background-image: url('../image/button_active_center.png');
+    color: #FFFFA0;
+}
+
+.by {
+
+    font-size: 30px;
+
+color: #fff;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00ff22, 0 0 30px #00ff22, 0 0 40px #00ff22, 0 0 55px #00ff22, 0 0 75px #00ff22;
+
+}
+
+.by:hover{
+    color: grey;
+    text-shadow: 0 0 5px rgb(90, 90, 90), 0 0 10px rgb(90, 90, 90), 0 0 20px #00ff22, 0 0 30px #00ff22, 0 0 40px #00ff22, 0 0 55px #00ff22, 0 0 75px #00ff22;
+
+}
+
+
+
+
+#game {
+    display: flex;
+    color: wheat;
+    height: 100vh;
+    
+    
+}
+
+.gamepage {
+
+
+    background-color: rgb(201, 201, 201);
+    width: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(20, auto);
+    grid-template-rows: repeat(auto, auto);
+    
+
+
+}
+.sidebar {
+
+    background: #313131;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    width: 15%;
+    padding: 5vh 5vw;
+
+
+}
+.left {
+    margin-left: auto;
+}
+.mid{
+    margin:0 auto;
+}
+
+
+
+#game .sidebar .box{
+    width: 90px;
+    height: 90px;
+    border: 1px solid white;
+    margin-top: 30px;
+
+}
+#game .sidebar .box:hover{
+    border: 3px slateblue solid;
+}
+
+#game .sidebar .box[data-tool-status="active"]{
+    border: 3px slateblue solid;
+}
+
+
+
+ .sidebar .box img{
+    background: center / 50% no-repeat;
+    height: 65px;
+    width: 65px;
+
+}
+
+.sidebar .elements {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2vh; */
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.sidebar .elements .myelement{
+    /* margin: 5px 0;
+    height: 5vh;
+    width: 5vh;
+    border: 1px solid white;
+
+    font-size: 1.5rem;
+    text-align: center;
+    transition: all 0.1s ease-in; */
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(174, 174, 174);
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+
+.sidebar .elements,.sidebar .box {
+    cursor: pointer;
+}
+
+
+
+[data-materials-type="bluesky"] {
+    background-color: rgb(190, 220, 253);
+  }
+[data-materials-type="white"] {
+    background-color: white;
+  }
+  
+  
+div[data-materials-type="ground"] {
+    background: url("../image/block-ground.jpg") no-repeat center center/cover;
+  }
+  
+[data-materials-type="stone"]{
+    background: url("../image/stone_block.png") no-repeat center center/cover;
+  }
+  
+[data-materials-type="tree"] {
+    background: url("../image/leaves_block.png") no-repeat center center/cover;
+  }
+  
+[data-materials-type="treetrank"] {
+    background: url("../image/tree_trunk_block.jfif") no-repeat center center/cover;
+  }
+
+  .materials{
+    cursor: pointer;
+  }
+
+  .materials:hover {
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+
+

@@ -1,0 +1,6 @@
+@font-face { font-family: Minecrafts; src: url('../font/Minecraft.ttf');} 
+
+:root{
+    --font-maincraft:Minecrafts;
+    --green-btn:#008542;
+}
